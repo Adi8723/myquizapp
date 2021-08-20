@@ -1,0 +1,106 @@
+
+
+.conteiner{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: lightyellow;
+	
+	
+}
+
+.blockquiz{
+	display: flex;
+	justify-content: center;
+	border: 1px solid blue;
+	background-size: cover;
+	position: relative;
+}
+
+.left{	
+	color: rgb(207, 201, 201);
+	border: 1px solid blue;
+	background-color: blue;
+	padding: 20px;
+	height: 500px;
+	width: 150px;
+}
+.left a{
+	margin-left: 20px;
+	font-size: 28px;
+	display: flex;
+	margin-top: 10px;
+	
+
+}
+.left a:hover{
+	cursor: pointer;
+}
+
+	
+.quizimg{
+	margin-bottom: 20px;
+}
+.btncolor{
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+}
+
+.right{
+	
+	margin-left: 20px;
+	padding: 20px;
+	height: 500px;
+	width: 700px;
+}
+
+.quiz-answer-card:hover{
+	cursor: pointer;
+}
+
+.buchstabe b{
+	margin-right: 60px;
+	background-color: lightgray;
+	border: 1px solid lightyellow;
+	padding: 10px;
+}
+.span{
+	text-align: right;
+	margin-left: 10px;
+}
+
+.right-left-btn{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.center button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+.final-headline{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.finalimg{
+	width: 12%;
+}
+
+.trophy img{
+	width: 15%;
+	position: absolute;
+	right: 0;
+	bottom: 17%;
+	top: 22%;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quizapp</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>
+
+	<!-- Bootstrap files -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+crossorigin="anonymous"
+/>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+crossorigin="anonymous"
+></script>
+</head>
+<body onload="init()">
+	
+	<div class="content">
+		<div class="progress">
+			<div
+			  class="progress-bar"
+			  role="progressbar"
+			  style="width: 0%"
+			  aria-valuenow="25"
+			  id="progress-bar"
+			>
+			  25%
+			</div>
+		 </div>
+		<div class="conteiner">
+		
+			<div class="blockquiz">
+				
+				<div class="left">
+					<img class="quizimg" src="img/logo.png" alt="">
+					<nav>
+						<a onclick="showquession('CSS')">CSS</a>
+						<a onclick="showquession('HTML')">HTML</a>
+						<a onclick="showquession('JS')">JS</a>
+						<a onclick="showquession('JAVA')">JAVA</a>
+					</nav>
+				</div>
+				
+				<div class="right" >
+					
+					<div id="right">
+						<h2>Wellcome to <br>The Awsome HTML Quiz</h2>
+						<h3>Ready for Chalange?</h3>
+						<button class="btn btn-warning btncolor" onclick="start()">Start Now > </button>
+					</div>
+		
+					<div class="card-body center" id="end" style="display: none;"> 
+						<img class="finalimg" src="img/brain result.png" alt="">
+						<div class="text-center final-headline"><b>Complete <br> HTML Quiz</b></div>
+		  
+						<div class="trophy"><img src="img/tropy.png" alt=""></div>
+		  
+						<div class="text-center">
+							<b>Your Score</b> <b id="fragen">XXX</b> /<b id="ergebnis">XXX</b> 
+		  
+						</div>
+						<div class="text-center">
+							<button class="btn btn-primary">Share</button>
+						</div>
+						<div class="btn-row text-center">
+							
+							<button class="btn btn-primary" onclick="Restart()">Reply</button>
+						  
+						</div>
+						
+					</div>
+					<div class="card-body css" id="quessionid" >
+						<h5 class="card-title mt-5 mb-4" id="question">Frage</h5>
+					
+						<div class="card mb-2 quiz-answer-card" onclick="answer('answer_1')">
+						  <div class="card-body" id="answer_1">
+								<div class="buchstabe"><b>A</b><span>Antwort</span></div> 
+						  </div>
+						</div>
+					
+						<div class="card mb-2 quiz-answer-card" onclick="answer('answer_2')">
+						  <div class="card-body" id="answer_2">
+								<div class="buchstabe"><b>B</b><span>Antwort</span></div> 
+						  </div>
+						</div>
+					
+						<div class="card mb-2 quiz-answer-card" onclick="answer('answer_3')">
+						  <div class="card-body" id="answer_3">
+								<div class="buchstabe"><b>C</b><span>Antwort</span></div> 
+						  </div>
+						</div>
+					
+						<div class="card mb-2 quiz-answer-card" onclick="answer('answer_4')">
+						  <div class="card-body" id="answer_4">
+								<div class="buchstabe"><b>D</b><span>Antwort</span></div>  
+						  </div>
+						</div> 
+	
+						<div class="right-left-btn">
+							<button class="btn btn-primary" onclick="lastquession()" id="lastquestion" disabled>Before</button>
+							<button class="btn btn-primary" onclick="nextQuession()" id="nextquestion" disabled>Next</button>
+						</div>
+					</div>
+				
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+		
+	</div>
+	
+</body>
+</html>
